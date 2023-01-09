@@ -1,0 +1,33 @@
+.header-box {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+
+    &:hover {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-buttons {
+    margin-right: 5%;
+
+    &:hover {
+        cursor: pointer;
+        color: #FA2759;
+    }
+}

@@ -1,0 +1,24 @@
+<div class="skill-container">
+    <h1>MY Skills</h1>
+    <div class="skill-box">
+
+        <div *ngFor="let mySkills of mySkills" class="skill-background">
+            <div class="skill">
+                <div class="skill-img-container">
+                    <img src="assets/{{ mySkills.skillImg }}">
+                </div>
+                <div>{{ mySkills.skillName }}</div>
+            </div>
+        </div>
+
+        <!-- <div class="skill-background">
+            <div class="skill">
+                <div class="skill-img-container">
+                    <img src="assets/github-fill.png">
+                </div>
+                <div>Github</div>
+            </div>
+        </div> -->
+
+    </div>
+</div>

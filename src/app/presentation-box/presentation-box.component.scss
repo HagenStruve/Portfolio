@@ -1,0 +1,75 @@
+.presentation-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 70vh;
+}
+
+.img-container {
+    border-radius: 100%;
+    height: 35vh;
+    width: 35vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+        height: 400px;
+        width: 400px;
+        border-radius: 100%;
+    }
+}
+
+.presentation-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    font-size: 30px;
+}
+
+.name {
+    color: #FA2759;
+}
+
+.letter {
+    color: #2DFCD8;
+}
+
+.contact-bottom {
+    color: #2DFCD8;
+    background-color: black;
+    border: 1px #2DFCD8 solid;
+    height: 40px;
+    width: 70%;
+
+    &:hover {
+        background-color: #2DFCD8;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.next-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+        background-color: white;
+        border: 1px white solid;
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+
+        &:hover {
+            cursor: pointer;
+                height: 70px;
+                width: 70px;
+        }
+    }
+}
