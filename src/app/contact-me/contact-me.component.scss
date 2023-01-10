@@ -1,0 +1,66 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 70vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #A8A8A8;
+
+    h1 {
+        color: #2EFCD8;
+    }
+}
+
+.contact-form {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.required-fields {
+    color: #989898;
+    background-color: #1A1A1A;
+    border: none;
+    height: 3vh;
+}
+
+.message-field {
+    color: #989898;
+    background-color: #1A1A1A;
+    height: 20vh;
+    border: none;
+}
+
+.button-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send-button {
+    color: #2EFCD8;
+    background-color: black;
+    border: 1px #2EFCD8 solid;
+    height: 40px;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #2EFCD8;
+        color: white;
+    }
+}

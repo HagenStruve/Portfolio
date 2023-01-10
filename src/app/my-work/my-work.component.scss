@@ -1,0 +1,108 @@
+.my-work-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sorted-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.sorted-box {
+    background-color: black;
+    border: 1px #FA2759 solid;
+    height: 40px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    &:hover {
+        background-color: #FA2759;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    height: 300px;
+    width: 300px;
+    margin: 2%;
+    display: flex;
+
+    img {
+        position: absolute;
+        z-index: 2;
+        height: 300px;
+        width: 300px;
+        margin: 2%;
+        object-fit: cover;
+        
+
+        &:hover {
+            z-index: 0;
+        }
+    }
+}
+
+.try-out-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1.9;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2%;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+
+    &:hover {
+        z-index: 2;
+    }
+
+    h2{
+        color: #FA2759;
+    }
+}
+
+.try-out-button {
+    color: #FA2759;
+    background-color: white;
+    border: 1px #FA2759 solid;
+    height: 40px;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

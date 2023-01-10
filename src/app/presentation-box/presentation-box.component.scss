@@ -14,12 +14,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    img {
-        height: 400px;
-        width: 400px;
-        border-radius: 100%;
-    }
+    background-image: url("/assets/Foto.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .presentation-text {
@@ -45,6 +42,11 @@
     border: 1px #2DFCD8 solid;
     height: 40px;
     width: 70%;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
         background-color: #2DFCD8;
@@ -57,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70px;
 
 
     img {
@@ -68,8 +71,8 @@
 
         &:hover {
             cursor: pointer;
-                height: 70px;
-                width: 70px;
+            height: 70px;
+            width: 70px;
         }
     }
 }

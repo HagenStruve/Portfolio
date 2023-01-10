@@ -1,0 +1,70 @@
+.about-me-body {
+    background-color: #131111;
+    margin: 0;
+    height: 80vh;
+    margin-top: 5vh;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about-me-header {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profil-img {
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+    background-image: url("/assets/Foto.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.border {
+    border: 1px solid #2DFCD8;
+    width: 90%;
+}
+
+.journey-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+}
+
+.journey-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 22%;
+    text-align: center;
+}
+
+.about-me-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2DFCD8;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}

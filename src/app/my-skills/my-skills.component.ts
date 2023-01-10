@@ -10,7 +10,7 @@ export class MySkillsComponent implements OnInit {
   public mySkills = [
     {
       "skillName":"Angular",
-      "skillImg": "angular"
+      "skillImg": "icons8-angularjs-50"
     },
     {
       "skillName":"Git",
@@ -46,10 +46,12 @@ export class MySkillsComponent implements OnInit {
     }
   ]
 
+
+  
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.mySkills = this.mySkills;
   }
 
 }

@@ -1,0 +1,38 @@
+.footer-container {
+    height: 20vh;
+    background-color: white;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.link-container {
+    display: flex;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.icon-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.5);
+    }
+}
