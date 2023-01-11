@@ -1,6 +1,4 @@
 .header {
-    position: fixed;
-    transition: transform .25s .1s ease-in-out;
     background-color: black;
     height: 10vh;
     display: flex;
@@ -12,10 +10,6 @@
     z-index: 3;
 }
 
-.header .hide  {
-    transform: translate3d(0, -10vh, 0);
-}
-
 .header-box {
     width: 100%;
     display: flex;
@@ -23,16 +17,15 @@
     align-items: center;
     margin-right: 5%;
     margin-left: 5%;
-
 }
 
 .logo {
     height: 50px;
     width: 50px;
+    transition: all .3s ease-in-out;
 
     &:hover {
-        height: 60px;
-        width: 60px;
+        transform: scale(1.4);
     }
 }
 
