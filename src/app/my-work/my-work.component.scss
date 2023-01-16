@@ -1,5 +1,5 @@
 .my-work-container {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -41,6 +41,7 @@
     align-items: center;
     margin-top: 5%;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .project {
