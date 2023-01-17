@@ -11,6 +11,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { MainComponent } from './main/main.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MyWorkComponent,
     AboutMeComponent,
     ContactMeComponent,
-    FooterComponent
+    FooterComponent,
+    ImpressumComponent,
+    MainComponent,
+    LegalNoticeComponent,
   ],
   imports: [
     BrowserModule,
