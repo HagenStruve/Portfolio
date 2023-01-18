@@ -7,53 +7,81 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
 
-  projects = [
+  projects: any = [
     {
-      "js": "js",
+      "workTool": "js",
       "image": "assets/Elpolloloco.png",
       "name": "El Pollo Loco",
-      "text": "Java Script -baded jump and run game",
+      "text": "JavaScript Jump and Run Spiel",
       "url": "https://hagen-struve.developerakademie.net/Developer%20Akademie/module/modul_11/El_Pollo_Loco/index.html",
       "urlGithub": "https://github.com/HagenStruve/El_Pollo_Loco"
     },
     {
-      "js": "js",
+      "workTool": "js",
       "image": "assets/Join.png",
       "name": "Join",
-      "text": "Java Script -Kanbanboard",
+      "text": "JavaScript - Kanbanboard",
       "url": "https://hagen-struve.developerakademie.net/Developer%20Akademie/module/modul_10/Join/html/summary.html",
       "urlGithub": "https://github.com/HagenStruve/Join-Gruppenarbeit"
     },
     {
-      "js": "js",
+      "workTool": "js",
       "image": "assets/Pokedex.png",
       "name": "Pokedex",
-      "text": "Java Script -build with API",
+      "text": "JavaScript - mit API erstellt",
       "url": "https://hagen-struve.developerakademie.net/Developer%20Akademie/module/modul_9/Projekte/Pokedex/index.html",
       "urlGithub": "https://github.com/HagenStruve/Pokedex"
     },
     {
-      "angular": "angular",
+      "workTool": "angular",
       "image": "assets/Portfolio.png",
       "name": "Portfolio",
-      "text": "This is Angular project",
+      "text": "Dies ist ein Angular-Projekt",
       "url": "https://hagen-struve.de",
       "urlGithub": "https://github.com/HagenStruve/Portfolio"
     },
   ];
-  tool = [];
+  tool: any = [];
 
-  all() { }
+  all() {
+    this.tool = []
+    for (let i = 0; i < this.projects.length; i++) {
+      let project = this.projects[i];
+    
 
-  angular() {
-
-      let jsSort = this.projects.filter( =>(item: { js: string; }) {
-        return item.js == "js";
-      });
-      console.log("Returned string is : " + jsSort);
+    let jsSort = project;
+    this.tool.push(jsSort);
+    console.log("Returned string is : " + this.tool);
+  }
   }
 
-  javaScript() { }
+  angular() {
+    this.tool = []
+
+    for (let i = 0; i < this.projects.length; i++) {
+      let project = this.projects[i];
+
+    let jsSort: any = project.filter(function (item: any) {
+      return item.workTool == "angular";
+    });
+    this.tool.push(jsSort);
+    console.log("Returned string is : " + this.tool);
+  }
+}
+
+  javaScript() {
+  //   this.tool = []
+
+  //   for (let i = 0; i < this.projects.length; i++) {
+  //     let project = this.projects[i];
+
+  //   let jsSort = project.filter(function (item) {
+  //     return item.workTool == "js";
+  //   });
+  //   this.tool.push(jsSort);
+  //   console.log("Returned string is : " + this.tool);
+  // }
+}
 
 
   constructor() { }

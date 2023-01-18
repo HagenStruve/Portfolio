@@ -17,7 +17,7 @@ export class MySkillsComponent implements OnInit {
       "skillImg": "Git-Icon-1788C 2"
     },
     {
-      "skillName":"Java Script",
+      "skillName":"JavaScript",
       "skillImg": "java script"
     },
     {

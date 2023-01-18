@@ -32,11 +32,6 @@ body {
     height: 150px;
     width: 30%;
     margin-bottom: 5%;
-    transition: all .3s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-    }
 
     @media screen and (max-width: 500px) {
         height: 20%;

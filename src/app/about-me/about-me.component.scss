@@ -31,6 +31,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    margin-right: 30px;
 
     @media screen and (max-width: 500px) {
         height: 130px;
@@ -116,11 +117,6 @@
     width: 70px;
     margin-top: 30px;
     margin-bottom: 30px;
-    transition: all .3s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-    }
 
     img {
         height: 30px;
