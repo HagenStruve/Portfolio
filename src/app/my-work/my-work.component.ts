@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
 
+projects = [];
+tool = [];
+
+all(){}
+
+angular(){}
+
+javaScript(){}
+
+
   constructor() { }
 
   ngOnInit(): void {

@@ -7,7 +7,6 @@ body {
 }
 
 .skill-container {
-    height: 70vh;
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
@@ -32,10 +31,16 @@ body {
     border-radius: 10px;
     height: 150px;
     width: 30%;
+    margin-bottom: 5%;
     transition: all .3s ease-in-out;
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 20%;
+        margin-bottom: 10%;
     }
 }
 
@@ -47,7 +52,7 @@ body {
     color: black;
     position: relative;
     top: -20px;
-    font-size: 25px;
+    font-size: calc(10px + (25) * ((100vw - 320px) / (1600 - 320)));
     text-align: center;
     cursor: default;
 }
@@ -67,5 +72,11 @@ body {
     img {
         height: 60%;
         width: 60%;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 10px;
     }
 }
