@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
    ngOnInit(): void {
+    window.addEventListener("load", this.callbackFunc);
+    window.addEventListener("scroll", this.callbackFunc);
    }
 
    isElementInViewport(element:any) {
@@ -22,7 +24,7 @@ export class MainComponent implements OnInit {
   //  var elements = document.querySelectorAll(".mein-element");
     
    callbackFunc(this: any) {
-    var elements = document.querySelectorAll(".mein-element");
+    var elements = document.querySelectorAll(".scroll");
     for (var i = 0; i < elements.length; i++) {
      if (this.isElementInViewport(elements[i])) {
     elements[i].classList.add("visible");
@@ -35,8 +37,6 @@ export class MainComponent implements OnInit {
     }
   }
    
-  addEventListener(type: "load", callbackFunc: any);
-  addEventListener(type: "scroll", callbackFunc: any);
     
   //  window.addEventListener("load", this.callbackFunc);
   //  window.addEventListener("scroll", this.callbackFunc);
