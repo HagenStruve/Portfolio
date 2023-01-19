@@ -1,0 +1,13 @@
+.visible {
+    background: lime;
+  }
+
+  .scroll {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+  
+  
+  .visible {
+    opacity: 1;
+  }
