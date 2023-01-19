@@ -46,8 +46,6 @@ export class MySkillsComponent implements OnInit {
     }
   ]
 
-
-  
   constructor() { }
 
   ngOnInit(): void {

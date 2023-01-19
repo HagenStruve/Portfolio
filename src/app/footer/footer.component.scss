@@ -14,9 +14,17 @@
 
 .link-container {
     display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 
     a {
         text-decoration: none;
+        font-size: calc(10px + (21) * ((100vw - 320px) / (1600 - 320)));
+    }
+
+    @media screen and (max-width: 470px) {
+        flex-direction: column;
     }
 }
 

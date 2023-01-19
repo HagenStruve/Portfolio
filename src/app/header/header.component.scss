@@ -11,6 +11,12 @@
     position: fixed;
 }
 
+.home{
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
+}
+
 .header-box {
     width: 100%;
     display: flex;
