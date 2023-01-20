@@ -10,7 +10,8 @@
         </div>
         <div data-aos="fade-up-left" class="input-container">
             <span> E-Mail-Adresse</span>
-            <input #emailField type="email" name="message" class="required-fields" placeholder="Enter your Email address" required>
+            <input #emailField type="email" name="email" class="required-fields" placeholder="Enter your Email address"
+                required>
         </div>
         <div data-aos="fade-up-left" class="input-container">
             <span>Nachricht</span>
@@ -21,5 +22,8 @@
             <button #sendButton class="send-button">Send</button>
         </div>
     </form>
+
+    <div class="d-none" data-aos="fade-right" [ngClass]="{'loadbox' : loadbox}">Wird gesendet
+    </div>
 
 </div>

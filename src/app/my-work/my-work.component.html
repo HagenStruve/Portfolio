@@ -2,13 +2,13 @@
     <h1 data-aos="fade-up-left">My work</h1>
 
     <div data-aos="fade-up-left" class="sorted-container">
-        <div #allButton (click)="all()" class="sorted-box background-color">
+        <div (click)="all()" [ngClass]="{'background-color' : allButton}" class="sorted-box background-color">
             <span>All</span>
         </div>
-        <div #angularButton (click)="angular()" class="sorted-box">
+        <div (click)="angular()" [ngClass]="{'background-color' : angularButton}" class="sorted-box">
             <span>Angular</span>
         </div>
-        <div #jsButton (click)="javaScript()" class="sorted-box">
+        <div (click)="javaScript()"  [ngClass]="{'background-color' : jsButton}" class="sorted-box">
             <span>JavaScript</span>
         </div>
     </div>

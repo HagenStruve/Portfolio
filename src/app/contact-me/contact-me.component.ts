@@ -18,6 +18,7 @@ export class ContactMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loadbox = false;
 
   async sendMail() {
     
@@ -34,7 +35,7 @@ export class ContactMeComponent implements OnInit {
 
     let fd = new FormData();
     fd.append('name', nameField.value)
-    fd.append('message', emailField.value)
+    fd.append('email', emailField.value)
     fd.append('message', messageField.value)
     //senden
     await fetch('https://hagen-struve.de/send_mail/send_mail.php',
@@ -48,5 +49,14 @@ export class ContactMeComponent implements OnInit {
     emailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+    
+    this.loadbox = true;
+
+    setTimeout(()=>{                   
+      this.loadbox = false;
+  }, 3000);
+
+    
+
   }
 }

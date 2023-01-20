@@ -24,6 +24,7 @@
 
     @media screen and (max-width: 500px) {
         margin-bottom: 20px;
+
         span {
             font-size: calc(15px + (21) * ((100vw - 320px) / (1600 - 320)));
             margin-bottom: 0px;
@@ -40,7 +41,7 @@
     justify-content: space-around;
 
     @media screen and (max-width: 500px) {
-       width: 90%;
+        width: 90%;
     }
 }
 
@@ -100,4 +101,21 @@
         background-color: #2EFCD8;
         color: white;
     }
+}
+
+.loadbox {
+    position: absolute;
+    width: 50vw;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.d-none {
+    display: none;
 }
