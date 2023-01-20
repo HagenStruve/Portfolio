@@ -6,10 +6,19 @@
     height: 80vh;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     color: #A8A8A8;
+    overflow: hidden;
 
     h1 {
         color: #2EFCD8;
+    }
+
+    span {
+        font-size: calc(10px + (21) * ((100vw - 320px) / (1600 - 320)));
+        margin-bottom: 15px;
     }
 
     @media screen and (max-width: 500px) {
@@ -72,6 +81,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+
 
     &:hover {
         cursor: pointer;

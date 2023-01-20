@@ -1,14 +1,16 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 h1{
     margin-bottom: 70px;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .skill-body {
     background-color: #131111;
+    padding-bottom: 10vh;
 }
 
 .skill-container {
