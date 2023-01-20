@@ -5,7 +5,6 @@
     margin-left: 10%;
     margin-right: 10%;
     height: 85vh;
-    padding-bottom: 5vh;
     overflow: hidden;
 }
 
@@ -35,7 +34,7 @@
     align-items: flex-start;
     height: 20vh;
     width: 50%;
-    font-size: calc(25px + (35) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(30px + (35) * ((100vw - 320px) / (1600 - 320)));
     cursor: default;
 }
 
