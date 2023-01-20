@@ -1,7 +1,7 @@
 <div class="my-work-container">
-    <h1 id="PORTFOLIO">My work</h1>
+    <h1 data-aos="fade-up-left" id="PORTFOLIO">My work</h1>
 
-    <div class="sorted-container">
+    <div data-aos="fade-up-left" class="sorted-container">
         <div (click)="all()" class="sorted-box">
             <span>All</span>
         </div>
@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <div class="project-container">
+    <div data-aos="fade-up-left" class="project-container">
         
         <div *ngFor="let project of tool; let i = index" class="project">
             <img class="project-image" src="{{ project.image }}">

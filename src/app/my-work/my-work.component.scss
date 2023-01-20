@@ -54,9 +54,9 @@
     height: 300px;
     width: 300px;
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
 
     img {
         position: absolute;
@@ -64,9 +64,7 @@
         height: 300px;
         width: 300px;
         object-fit: cover;
-        margin-top: 10px;
-        margin-bottom: 10px;
-
+        margin: 10px;
 
         &:hover {
             z-index: 0;
@@ -125,8 +123,7 @@
     color: black;
     font-size: 16px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
 
     &:hover {
         z-index: 2;

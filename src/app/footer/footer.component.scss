@@ -20,11 +20,23 @@
 
     a {
         text-decoration: none;
-        font-size: calc(10px + (21) * ((100vw - 320px) / (1600 - 320)));
+        color: black;
+        font-size: calc(10px + (10) * ((100vw - 320px) / (1600 - 320)));
+    
+        &:hover{
+            color: blue;
+        }
     }
 
     @media screen and (max-width: 470px) {
         flex-direction: column;
+    }
+
+    span {
+        font-size: calc(10px + (10) * ((100vw - 320px) / (1600 - 320)));
+        color: black;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 

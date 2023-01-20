@@ -1,21 +1,23 @@
 <div class="contact-container">
-    <h1 id="Contact">Contact me.</h1>
-    <span>Kontaktieren Sie mich über das unten stehende Formular oder per E-Mail an Struve94@web.de.</span>
-    
+    <h1 data-aos="fade-up-left" id="Contact">Contact me.</h1>
+    <span data-aos="fade-up-left">Kontaktieren Sie mich über das unten stehende Formular oder per E-Mail an
+        Struve94@web.de.</span>
+
     <form (submit)="sendMail()" class="contact-form" ngNativeValidate #myForm>
-        <div class="input-container">
+        <div data-aos="fade-up-left" class="input-container">
             <span>Name</span>
             <input #nameField name="name" class="required-fields" placeholder="Enter your name" required>
         </div>
-        <div class="input-container">
+        <div data-aos="fade-up-left" class="input-container">
             <span> E-Mail-Adresse</span>
             <input #emailField name="email" class="required-fields" placeholder="Enter your Email address" required>
         </div>
-        <div class="input-container">
+        <div data-aos="fade-up-left" class="input-container">
             <span>Nachricht</span>
-            <textarea #messageField name="message" class="message-field" placeholder="Enter your message" required></textarea>
+            <textarea #messageField name="message" class="message-field" placeholder="Enter your message"
+                required></textarea>
         </div>
-        <div class="button-box">
+        <div data-aos="fade-up-left" class="button-box">
             <button #sendButton class="send-button">Send</button>
         </div>
     </form>
