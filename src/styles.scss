@@ -6,6 +6,23 @@ html {
     scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FA2759; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e2214e; 
+  }
+
 body{
     margin: 0;
 }

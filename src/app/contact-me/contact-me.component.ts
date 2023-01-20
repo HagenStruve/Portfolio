@@ -49,15 +49,9 @@ export class ContactMeComponent implements OnInit {
     messageField.disabled = false;
     sendButton.disabled = false;
 
-    // this.finishSendEmail();
+    nameField.innerHTML = '';
+    emailField.innerHTML = '';
+    messageField.innerHTML = '';
+    sendButton.innerHTML = '';
   }
-
-  // finishSendEmail(){
-     // Text anzeigen: Nachricht gesendet
-    //  nameField.disabled = false;
-    //  emailField.disabled = false;
-    //  messageField.disabled = false;
-    //  sendButton.disabled = false;
-  // }
-
 }

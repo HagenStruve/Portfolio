@@ -18,7 +18,7 @@ export class MySkillsComponent implements OnInit {
     },
     {
       "skillName":"JavaScript",
-      "skillImg": "java script"
+      "skillImg": "javascript-logo-number-angularjs-node-javascript-logo-11563241338go76tq0nxz"
     },
     {
       "skillName":"HTML/CSS",
