@@ -74,21 +74,48 @@ export class MyWorkComponent implements OnInit {
     "urlGithub": "https://github.com/HagenStruve/Portfolio"
   }
 ];
+  allButton: any;
+  jsButton: any;
+  angularButton: any;
 
   all() {
     this.tool = []
     this.tool = this.projects;
+
+    let jsButton = this.jsButton.nativeElement;
+    let allButton = this.allButton.nativeElement;
+    let angularButton = this.angularButton.nativeElement;
+
+    allButton.classList.add('background-color');
+    angularButton.classList.remove('background-color');
+    jsButton.classList.remove('background-color');
   }
 
   angular() {
     this.tool = []
     this.tool = this.projects.filter((item: any) => item.workTool == "angular");
+
+    let jsButton = this.jsButton.nativeElement;
+    let allButton = this.allButton.nativeElement;
+    let angularButton = this.angularButton.nativeElement;
+    
+    angularButton.classList.add('background-color');
+    allButton.classList.remove('background-color');
+    jsButton.classList.remove('background-color');
   }
 
   javaScript() {
     this.tool = []
 
     this.tool = this.projects.filter((item: any) => item.workTool == "js");
+
+    let jsButton = this.jsButton;
+    let allButton = this.allButton;
+    let angularButton = this.angularButton;
+
+    jsButton.add('background-color');
+    allButton.remove('background-color');
+    angularButton.remove('background-color');
   }
 
 

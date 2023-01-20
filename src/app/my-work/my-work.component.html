@@ -2,13 +2,13 @@
     <h1 data-aos="fade-up-left">My work</h1>
 
     <div data-aos="fade-up-left" class="sorted-container">
-        <div (click)="all()" class="sorted-box">
+        <div #allButton (click)="all()" class="sorted-box background-color">
             <span>All</span>
         </div>
-        <div (click)="angular()" class="sorted-box">
+        <div #angularButton (click)="angular()" class="sorted-box">
             <span>Angular</span>
         </div>
-        <div (click)="javaScript()" class="sorted-box">
+        <div #jsButton (click)="javaScript()" class="sorted-box">
             <span>JavaScript</span>
         </div>
     </div>
